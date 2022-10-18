@@ -31,6 +31,7 @@ class Post(models.Model):
         return self.likes.count()
 
 
+# Model for comments
 class Comment(models.Model):
     post = models.ForeignKey(
         Post, on_delete=models.CASCADE, related_name='comments')
@@ -46,6 +47,7 @@ class Comment(models.Model):
         return f"Comment: {self.body} written by {self.name}"
 
 
+# Users profile options
 class Personal(models.Model):
     person = models.OneToOneField(User, on_delete=models.CASCADE, null=True)
     about = models.TextField()

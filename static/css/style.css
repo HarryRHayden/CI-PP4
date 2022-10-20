@@ -35,3 +35,30 @@ body {
     text-decoration: underline;
     color: #140302;
 }
+
+.index-card {
+    border: #140302;
+    background-color: #F17D3A;
+}
+
+.image-container {
+    position: relative;
+}
+
+.image-user {
+    position: relative;
+    bottom: 10%;
+    top: 10%;
+    min-width: 40%;
+    color: #140302;
+}
+
+.user {
+    text-transform: capitalize;
+    margin: 5px;
+}
+
+.post-link {
+    text-decoration: none;
+    color: #140302;
+}

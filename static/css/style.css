@@ -6,6 +6,10 @@ body {
     color: #fef0de;
 }
 
+.text-color {
+    color: #140302;
+}
+
 .nav-link {
     color:#140302;
 }
@@ -61,4 +65,62 @@ body {
 .post-link {
     text-decoration: none;
     color: #140302;
+}
+
+.masthead {
+    margin-top: 10px;
+    overflow: hidden;
+    position: relative;
+    display: inline-block;
+    height: 33vh;
+    width: 100%;
+}
+
+.masthead-text {
+    background-color: #F17D3A;
+    color: #140302;
+    position: relative;
+}
+
+.masthead-image {
+    position: relative;
+    overflow: hidden;
+}
+
+.masthead-image:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 90%;
+    height: 100%;
+    width: 150%;
+    background: #F17D3A;
+    -webkit-transform: skew(15deg);
+    -moz-transform: skew(15deg);
+    transform: skew(15deg);
+    z-index: 100;
+}
+
+.card-body {
+    background-color: #F17D3A;
+    color: #140302;
+    border: solid 2px;
+    border-color: #140302;
+}
+
+.btn-like {
+    color: #140302;
+    border: none;
+    background: transparent;
+}
+
+.btn-like:hover,
+.btn-like:active {
+    color: #140302;
+    background: transparent;
+    border: none;
+}
+
+.no-border {
+    border: none;
 }

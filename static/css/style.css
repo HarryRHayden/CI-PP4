@@ -10,7 +10,8 @@ body {
     color: #140302;
 }
 
-.nav-link {
+.nav-link,
+.link {
     color:#140302;
 }
 
@@ -123,4 +124,16 @@ body {
 
 .no-border {
     border: none;
+}
+
+.btn-signup {
+    background-color: #F17D3A;
+    border: 1px solid #140302;
+}
+
+.btn-signup:hover,
+.btn-signup:active {
+    background-color: #140302;
+    border: 1px solid #F17D3A;
+    color: #F17D3A;
 }

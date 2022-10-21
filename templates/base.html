@@ -55,6 +55,24 @@
             </div>
         </div>
     </nav>
+
+    <div class="container">
+
+        <!-- This will show messages at the top of the page -->
+
+        <div class="row">
+            <div class="col card mb-4 mt-3 no-border dark-bg">
+                {% for message in messages %}
+                <div class="alert {{ message.tags }} alert-dismissble fade show" id="message" role="alert">
+                {{ message | safe }}
+                <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close">
+
+                </button>
+                </div>
+                {% endfor %}
+            </div>
+        </div>
+    </div>
     
     <main class="flex-shrink-0 main-bg">
         {% block content %}
@@ -65,6 +83,15 @@
     <footer class="footer mt-auto py-3 dark-bg">
         
     </footer>
+
+    <script>
+        setTimeout(function () {
+            let messages = document.getElementById("message");
+            let alert = new bootstrap.Alert(messages);
+            alert.close();
+
+        }, 3000);
+    </script>
 
 </body>
 </html>

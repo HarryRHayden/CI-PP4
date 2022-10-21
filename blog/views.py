@@ -5,6 +5,9 @@ from .models import Post, Comment
 from .forms import CommentForm
 from django.urls import reverse_lazy
 from django.views.generic import FormView, UpdateView
+from django.contrib import messages
+from django.contrib.auth import login
+from django.contrib.auth.decorators import login_required
 
 
 # Create your views here.
@@ -71,3 +74,36 @@ class PostDetail(View):
                 "comment_form": comment_form
             },
         )
+
+
+class PostLike(View):
+
+    def post(self, request, slug):
+        post = get_object_or_404(Post, slug=slug)
+
+        if post.likes.filter(id=request.user.id).exists():
+            post.likes.remove(request.user)
+        else:
+            post.likes.add(request.user)
+
+        return HttpResponseRedirect(reverse('post_detail', args=[slug]))
+
+
+# allows the user to delete their comment
+@login_required(login_url='login')
+def edit_comment(request, comment_id):
+    comment = get_object_or_404(Comment, id=comment_id)
+    comment_form = CommentForm(request.POST or None, instance=comment)
+
+    if request.method == "POST":
+        if comment_form.is_valid():
+            comment_form.save()
+            messages.success(request, "Comment updated!")
+            return redirect(reverse("post_detail", args=[comment.post.slug]))
+        messages.error(request, "Error. Please try again.")
+    template = "edit_comment.html"
+    context = {
+        "comment": comment,
+        "comment_form": comment_form,
+    }
+    return render(request, template, context)

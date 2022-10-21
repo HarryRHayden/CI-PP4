@@ -107,3 +107,23 @@ def edit_comment(request, comment_id):
         "comment_form": comment_form,
     }
     return render(request, template, context)
+
+
+# Allows the user to delete their comment
+@login_required(login_url='login')
+def delete_comment(request, comment_id):
+    comment = get_object_or_404(Comment, id=comment_id)
+    comment_form = CommentForm(request.POST or None, instance=comment)
+
+    if request.method == "POST":
+        if comment_form.is_valid():
+            comment.delete()
+            messages.success(request, "Comment deleted!")
+            return redirect(reverse("post_detail", args=[comment.post.slug]))
+        messages.error(request, "Error. Please try again.")
+    template = "delete_comment.html"
+    context = {
+        "comment": comment,
+        "comment_form": comment_form,
+    }
+    return render(request, template, context)

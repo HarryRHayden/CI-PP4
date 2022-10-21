@@ -126,13 +126,16 @@ body {
     border: none;
 }
 
-.btn-signup {
+.btn-signup,
+.btn-signin {
     background-color: #F17D3A;
     border: 1px solid #140302;
 }
 
 .btn-signup:hover,
-.btn-signup:active {
+.btn-signup:active,
+.btn-signin:hover,
+.btn-sigin:active {
     background-color: #140302;
     border: 1px solid #F17D3A;
     color: #F17D3A;

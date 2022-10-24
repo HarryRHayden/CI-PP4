@@ -2,7 +2,7 @@ from django.shortcuts import render, get_object_or_404, reverse, redirect
 from django.views import generic, View
 from django.http import HttpResponseRedirect, HttpResponse
 from .models import Post, Comment
-from .forms import CommentForm
+from .forms import CommentForm, EditUser
 from django.urls import reverse_lazy
 from django.views.generic import FormView, UpdateView
 from django.contrib import messages
@@ -89,7 +89,7 @@ class PostLike(View):
         return HttpResponseRedirect(reverse('post_detail', args=[slug]))
 
 
-# allows the user to delete their comment
+# allows the user to edit their comment
 @login_required(login_url='login')
 def edit_comment(request, comment_id):
     comment = get_object_or_404(Comment, id=comment_id)
@@ -127,3 +127,13 @@ def delete_comment(request, comment_id):
         "comment_form": comment_form,
     }
     return render(request, template, context)
+
+
+# For editing personal information
+class UserEditView(generic.UpdateView):
+    form_class = EditUser
+    template_name = 'edit_user.html'
+    success_url = reverse_lazy('home')
+
+    def get_object(self):
+        return self.request.user

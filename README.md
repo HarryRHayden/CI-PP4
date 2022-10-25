@@ -4,9 +4,9 @@ A Pizza Perfection is a website which gives the user information on the history 
 
 There will be a section for users to provide feedback and topping inspirational ideas.
 
-![Webpage responsive](docs/images/responsive_design.png)
+![Webpage responsive]()
 
-[Live Webpage](https://harryrhayden.github.io/CI_PP1/index.html)
+[Live Webpage](https://sliceshare.herokuapp.com/)
 
 1. [Project Goals](#project-goals)
     1. [User Goals](#user-goals)
@@ -160,7 +160,7 @@ Validation completed by [Free Formatter](https://www.freeformatter.com/html-vali
 
 Validation for CSS coding was completed by [W3S CSS Validator](https://jigsaw.w3.org/css-validator/) and returned no errors for my CSS coding.
 
-  <details><summary>CSS</summary><img src=""></details>
+  <details><summary>CSS</summary><img src="docs/images/css_validate.png"></details>
   
 ### Lighthouse Score
 

@@ -54,4 +54,4 @@ class Personal(models.Model):
     person_image = CloudinaryField('image', default='placeholder')
 
     def __str__(self):
-        return str(self.user)
+        return str(self.person)

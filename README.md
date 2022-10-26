@@ -37,17 +37,25 @@ There will be a section for users to provide feedback and topping inspirational 
 8. [Bugs Fixed](#bugs-fixed)
 9. [Deployment](#deployment)
 10. [Credits](#credits)
-    2. [Content](#content)
+    1. [Content](#content)
  
 
 ## Project Goals
 
 ### User Goals
-
+1. Create a user on to the blog site
+2. View posts in detail
+3. Like a post
+4. Comment on a post
+5. Have an overview of all blog posts on the site
+6. Be able to navigate my way around the pages
+7. Ability to edit my user profile
 
 
 ### Site Owner Goals
-
+8. User registration - allow a user to create a user on the blog site so they can share in the community
+9. Be able to approve posts before they are published
+10. Manage posts by deletion/edit
 
 ## Style Choices
 
@@ -116,6 +124,7 @@ Before starting the website I used a framework design tool called [Balsamic](htt
 
   - Featured on all pages, the full responsive navigation bar 
   - This section will allow the user to easily navigate from page to page across all devices without having to revert back to the previous page via the ‘back’ button. 
+  - Covers User Story : 6
 
   ![Navigation Bar](docs/images/navbar.png)
 
@@ -123,6 +132,7 @@ Before starting the website I used a framework design tool called [Balsamic](htt
 
   - The landing page for the blog hosts cards representing each different blog post. 
   - An image accompanies an excerpt from the post to entice users to open a post
+    - Covers User Story : 5
 
   ![Homepage](docs/images/homepage.png)
 
@@ -130,6 +140,7 @@ Before starting the website I used a framework design tool called [Balsamic](htt
 
   - An individual page for each post. Allowing the user to expand the card from the homepage
   - A detailed blog view is provided
+  - Covers User Story : 2
 
   ![Post Detail](docs/images/postdetail.png)
 
@@ -137,6 +148,7 @@ Before starting the website I used a framework design tool called [Balsamic](htt
 
   - Each post can accumulate likes from other blog users
   - Allows interaction for the user
+  - Covers User Story : 3
 
   ![Likes](docs/images/like_area.png)
 
@@ -144,12 +156,14 @@ Before starting the website I used a framework design tool called [Balsamic](htt
 
   - Each post can be commented on by other users so that a community feel can be achieved
   - Allows interaction for the user and discussions to occur
+  - Covers User Story : 4
 
   ![Comments](docs/images/comments.png)
 
 - __Edit User__
 
   - Allowing users to edit their username and personal details
+  - Covers User Story : 7/8
 
   ![Edit User](docs/images/edit_user_feat.png)
 
@@ -157,6 +171,7 @@ Before starting the website I used a framework design tool called [Balsamic](htt
 
   - Allowing users to register with a username and personal details
   - Allows the user to become part of the community with priveleges to comment and like posts
+  - Covers User Story : 
 
   ![Register User](docs/images/register_feat.png)
 
@@ -248,8 +263,13 @@ Accessibility was tested using [Wave Webaim](https://wave.webaim.org/) and retur
 
 ## Bugs Fixed
 
-### 
+### Endfor Missing
 
+- When writing the code for the index homepage I put a for loop in to collect all relevant posts. However, I missed the closing endfor from the document producing
+a render error
+- Fixed by adding in the correct {% endfor %} tag
+<details><summary></summary><img src="docs/images/endfor_error.png"></details>
+<br>
 
 ### Testing user stories
 

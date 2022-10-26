@@ -124,46 +124,46 @@ Before starting the website I used a framework design tool called [Balsamic](htt
   - The landing page for the blog hosts cards representing each different blog post. 
   - An image accompanies an excerpt from the post to entice users to open a post
 
-  ![Navigation Bar](docs/images/homepage.png)
+  ![Homepage](docs/images/homepage.png)
 
 - __Post Detail__
 
   - An individual page for each post. Allowing the user to expand the card from the homepage
   - A detailed blog view is provided
 
-  ![Navigation Bar](docs/images/postdetail.png)
+  ![Post Detail](docs/images/postdetail.png)
 
 - __Likes__
 
   - Each post can accumulate likes from other blog users
   - Allows interaction for the user
 
-  ![Navigation Bar](docs/images/like_area.png)
+  ![Likes](docs/images/like_area.png)
 
 - __Comments__
 
   - Each post can be commented on by other users so that a community feel can be achieved
   - Allows interaction for the user and discussions to occur
 
-  ![Navigation Bar](docs/images/comments.png)
+  ![Comments](docs/images/comments.png)
 
 - __Edit User__
 
   - Allowing users to edit their username and personal details
 
-  ![Navigation Bar](docs/images/edit_user_feat.png)
+  ![Edit User](docs/images/edit_user_feat.png)
 
 - __Register User__
 
   - Allowing users to register with a username and personal details
   - Allows the user to become part of the community with priveleges to comment and like posts
 
-  ![Navigation Bar](docs/images/register_feat.png)
+  ![Register User](docs/images/register_feat.png)
 
 ### Features Left to Implement
 
 - Post Creation 
-- Users add their own images to profile and about sections
+- Users add their own images to profile and about sections without admin support
 
 ## Testing 
 
@@ -176,7 +176,33 @@ Before starting the website I used a framework design tool called [Balsamic](htt
         * Ensure that all navigation links correctly navigate to their respective pages when clicked
         * Ensure that all the :hover psuedo selectors work when using the navigation bar
         * Ensure the responsiveness of the navigation bar
-      
+    * Home/Landing Section
+        * Ensure the page loads correctly
+        * Ensure that the cards are correctly spaced
+        * Ensure that card images are correct
+        * Ensure the responsiveness of the page
+        * Ensure that the card links work
+      * Register User
+        * Ensure that the font-style and size are visible and of good contrast
+        * Ensure that there are no spelling mistakes
+        * Ensure that the form loads correctly
+        * Ensure the responsiveness of the page
+        * Ensure a user can be created
+      * Edit User
+        * Ensure that there are no spelling mistakes
+        * Ensure that the form loads correctly
+        * Ensure the responsiveness of the page
+        * Ensure a user can be edited
+      * Post Detail
+        * Ensure that all required elements work
+        * Ensure that the font-style and size are visible and of good contrast
+        * Ensure that there are no spelling mistakes
+        * Ensure when a verified user is logged in they are able to leave a comment
+        * Ensure when a verified user is logged in they are able to like a post
+        * Ensure the responsiveness of the page
+      * Footer Section
+        * Ensure that when you select Github link it opens in a new window
+        * Ensure the responsiveness of the Footer
 
 ### Perform test on devices
 The website was tested on the following devices:

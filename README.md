@@ -147,6 +147,18 @@ Before starting the website I used a framework design tool called [Balsamic](htt
 
   ![Navigation Bar](docs/images/comments.png)
 
+- __Edit User__
+
+  - Allowing users to edit their username and personal details
+
+  ![Navigation Bar](docs/images/edit_user_feat.png)
+
+- __Register User__
+
+  - Allowing users to register with a username and personal details
+  - Allows the user to become part of the community with priveleges to comment and like posts
+
+  ![Navigation Bar](docs/images/register_feat.png)
 
 ### Features Left to Implement
 

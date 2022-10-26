@@ -104,17 +104,48 @@ Before starting the website I used a framework design tool called [Balsamic](htt
   - Gitpod was used as IDE to commit and push the project to GitHub.
 - [GitHub:](https://github.com/)
   - Was used for all storing and backup of the code pertaining to the project.
+- [Cloudinary:](https://cloudinary.com/home-101222)
+  - Used to store all images relating to the blog
+- [Heroku](https://www.heroku.com/home)
+  - Used to host the database and app
 
 ## Features
 ### Existing Features
 
 - __Navigation Bar__
 
-  - Featured on all three pages, the full responsive navigation bar includes links to the Logo, Home page, History, Gallery and Contact Us page and is identical in each page to allow for easy navigation.
+  - Featured on all pages, the full responsive navigation bar 
   - This section will allow the user to easily navigate from page to page across all devices without having to revert back to the previous page via the ‘back’ button. 
-  - User stories covered : 1
 
-  ![Navigation Bar](docs/images/nav_bar.png)
+  ![Navigation Bar](docs/images/navbar.png)
+
+- __Homepage__
+
+  - The landing page for the blog hosts cards representing each different blog post. 
+  - An image accompanies an excerpt from the post to entice users to open a post
+
+  ![Navigation Bar](docs/images/homepage.png)
+
+- __Post Detail__
+
+  - An individual page for each post. Allowing the user to expand the card from the homepage
+  - A detailed blog view is provided
+
+  ![Navigation Bar](docs/images/postdetail.png)
+
+- __Likes__
+
+  - Each post can accumulate likes from other blog users
+  - Allows interaction for the user
+
+  ![Navigation Bar](docs/images/like_area.png)
+
+- __Comments__
+
+  - Each post can be commented on by other users so that a community feel can be achieved
+  - Allows interaction for the user and discussions to occur
+
+  ![Navigation Bar](docs/images/comments.png)
 
 
 ### Features Left to Implement

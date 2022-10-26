@@ -152,9 +152,13 @@ The website was tested on the following browsers:
 ## Validator Testing 
 
 ### HTML
-Validation completed by [Free Formatter](https://www.freeformatter.com/html-validator.html) this was due to W3S website being down for multiple days and not available to use. This validator returned no errors for HTML.
+Validation completed by [W3S](https://validator.w3.org/). This validator returned no errors for HTML.
 
-  <details><summary>Index Page</summary><img src=""></details>
+  <details><summary>Index Page</summary><img src="docs/images/index_html_validate.png"></details>
+  <details><summary>Post Detail</summary><img src="docs/images/post_detail_html_validate.png"></details>
+  <details><summary>Edit User</summary><img src="docs/images/edit_user_html_validate.png"></details>
+  <details><summary>Logout</summary><img src="docs/images/logout_html_validate.png"></details>
+  <details><summary>Register</summary><img src="docs/images/register_html_validate.png"></details>
 
 ### CSS
 
@@ -164,15 +168,13 @@ Validation for CSS coding was completed by [W3S CSS Validator](https://jigsaw.w3
   
 ### Lighthouse Score
 
-
-
-<details><summary>Lighthouse Index</summary><img src=""></details>
+<details><summary>Lighthouse Index</summary><img src="docs/images/lighthouse_score.png"></details>
 
 ### Accessibility
 
 Accessibility was tested using [Wave Webaim](https://wave.webaim.org/) and returned no errors.
 
-<details><summary></summary><img src=""></details>
+<details><summary></summary><img src="docs/images/accessibility_score.png"></details>
 
 
 ## Bugs Fixed
@@ -206,13 +208,10 @@ The following command in the Gitpod CLI will create the relevant files needed fo
 #### Heroku Settings  
 You will need to set your Environment Variables - this is a key step to ensuring your application is deployed properly.
 1. In the Settings tab, click on `Reveal Config Vars` and set the following variables:
-    - Add key: `PORT` & value `8000`
     - Add key: DATABASE_URL, this should have been created automatically by Heroku.
     - Add key: CLOUDINARY_URL and the value as your cloudinary API Environment variable e.g.
     - Add key: SECRET_KEY and the value as a complex string which will be used to provide cryptographic signing.
 
-2. Buildpacks are also required for proper deployment, simply click `Add buildpack` and search for the ones that you require.
-    - For this project, I needed to add `Python`.
 
 ####  Heroku Deployment  
 In the Deploy tab:
@@ -223,7 +222,7 @@ In the Deploy tab:
 2. You can then choose to deploy the project manually or automatically, automatic deployment will generate a new application every time you push a change to Github, whereas manual deployment requires you to push the `Deploy Branch` button whenever you want a change made.
 3. Once you have chosen your deployment method and have clicked `Deploy Branch` your application will be built and you should now see the `View` button, click this to open your application.
 
-You can for fork the repository by following these steps:
+You can fork the repository by following these steps:
 1. Go to the GitHub repository
 2. Click on Fork button in upper right hand corner
 

@@ -109,6 +109,10 @@ body {
     border-color: #140302;
 }
 
+.card-img-top {
+    width: 100%;
+}
+
 .btn-like {
     color: #140302;
     border: none;
@@ -139,4 +143,8 @@ body {
     background-color: #140302;
     border: 1px solid #F17D3A;
     color: #F17D3A;
+}
+
+.feature-image {
+    width: 100%;
 }

@@ -271,17 +271,7 @@ a render error
 <details><summary></summary><img src="docs/images/endfor_error.png"></details>
 <br>
 
-### Testing user stories
-
-1. 
-
-| **Feature** | **Action** | **Expected Result** | **Actual Result** |
-|-------------|------------|---------------------|-------------------|
-|  |  |  |  |
-
-  <details><summary>User Story 1</summary><img src=""></details><br>
-
-  ## Deployment
+## Deployment
 
 ### Deploying with Heroku
 

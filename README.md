@@ -1,10 +1,7 @@
-# A Pizza Perfection
+# Sliceshare
 
-A Pizza Perfection is a website which gives the user information on the history of two main types of pizza, these being Neopolitan and Romana. The website will explain the differences between the two allowing the user to choose which they prefer and try them at home.
+Sliceshare is a blog website where users can upload and post about different types of pizza they like. Their ideal toppings and different pizza's they have tried around the world. Encouraging the sharing of knowledge throughout the pizza community.
 
-There will be a section for users to provide feedback and topping inspirational ideas.
-
-![Webpage responsive]()
 
 [Live Webpage](https://sliceshare.herokuapp.com/)
 
@@ -64,9 +61,8 @@ There will be a section for users to provide feedback and topping inspirational 
 
 ### Colour Scheme
 
-For the colour of the Home page I used [Coolors](https://coolors.co/) which allowed me to utilise the colour of the cheese/dough for a palette.
+For the colour of the Home page I used [Coolors](https://coolors.co/) which allowed me to utilise the colour of the cheese/dough for a palette. These colours are an extension of my first project.
 
-<details><summary>Colour Palette</summary><img src="docs/images/palette.png"></details>
 <br>
 
 ### Structure
@@ -75,7 +71,8 @@ For the colour of the Home page I used [Coolors](https://coolors.co/) which allo
 
 Before starting the website I used a framework design tool called [Balsamic](https://balsamiq.com/) to mockup an initial design idea.
 
-<details><summary>Index</summary><img src=""></details>
+<details><summary>Index</summary><img src="docs/images/index_wireframe.png"></details>
+<details><summary>Post Detail</summary><img src="docs/images/post_detail_wireframe.png"></details>
 
 <br>
 

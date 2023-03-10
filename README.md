@@ -3,7 +3,7 @@
 Sliceshare is a blog website where users can upload and post about different types of pizza they like. Their ideal toppings and different pizza's they have tried around the world. Encouraging the sharing of knowledge throughout the pizza community.
 
 
-[Live Webpage](https://sliceshare.herokuapp.com/)
+[Live Webpage](https://sliceshare-blog.herokuapp.com/)
 
 1. [Project Goals](#project-goals)
     1. [User Goals](#user-goals)
@@ -311,7 +311,7 @@ You can clone the repository by following these steps:
 6. Type git clone and paste the URL from the clipboard ($ git clone https://github.com/YOUR-USERNAME/YOUR-REPOSITORY)
 7. Press the Enter key to create your local clone.
 
-The live link can be found here - https://sliceshare.herokuapp.com/
+The live link can be found here - https://sliceshare-blog.herokuapp.com/
 
 
 ## Credits 

@@ -33,7 +33,7 @@ DEBUG = os.environ.get('DEBUGGING')
 
 X_FRAME_OPTIONS = 'SAMEORIGIN'
 
-ALLOWED_HOSTS = ['sliceshare.herokuapp.com', 'localhost']
+ALLOWED_HOSTS = ['sliceshare-blog.herokuapp.com', 'localhost']
 
 
 # Application definition
